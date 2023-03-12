@@ -103,40 +103,15 @@ main {
         grid-template-columns: repeat(3, 300px);
         grid-template-rows: repeat(2, 1fr);
     }
+}
 
-    .img {
-        grid-area: 2/2/3/3;
-        width: 250px;
-        justify-self: end;
-        align-self: self-start;
-    }
+@media screen and (min-width: 768px) and (max-width:1023px) {
 
     .hgrid {
         grid-area: 1/1/2/2;
         display: grid;
         grid-template-rows: 75px 175px;
         grid-template-columns: repeat(2, 300px);
-    }
-
-    .dgrid {
-        display: grid;
-        background-color: #FFFFFF;
-        border-radius: 10%;
-        align-content: center;
-        justify-content: space-evenly;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 10px;
-    }
-
-    .i1 {
-        width: 125px;
-        height: 100px;
-        margin-left: 15px;
-    }
-
-    .gridcontainer {
-        display: grid;
-        grid-template-columns: 600px 300px;
     }
 
     h1 {
@@ -153,6 +128,39 @@ main {
         align-self: center;
     }
 
+    .img {
+        grid-area: 2/2/3/3;
+        width: 250px;
+        justify-self: end;
+        align-self: self-start;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 600px 300px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .dgrid {
+        display: grid;
+        background-color: #FFFFFF;
+        border-radius: 10%;
+        align-content: center;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .i1 {
+        width: 125px;
+        height: 100px;
+        margin-left: 15px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -166,40 +174,15 @@ main {
         grid-template-columns: repeat(3, 200px);
         grid-template-rows: repeat(2, 1fr);
     }
+}
 
-    .img {
-        grid-area: 2/2/3/3;
-        width: 200px;
-        justify-self: end;
-        align-self: self-start;
-    }
+@media screen and (max-width:767px) {
 
     .hgrid {
         grid-area: 1/1/2/2;
         display: grid;
         grid-template-rows: 50px 150px;
         grid-template-columns: repeat(2, 200px);
-    }
-
-    .dgrid {
-        display: grid;
-        background-color: #FFFFFF;
-        border-radius: 10%;
-        align-content: center;
-        justify-content: space-evenly;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px;
-    }
-
-    .i1 {
-        width: 100px;
-        height: 75px;
-        margin-left: 10px;
-    }
-
-    .gridcontainer {
-        display: grid;
-        grid-template-columns: 400px 200px;
     }
 
     h1 {
@@ -214,5 +197,37 @@ main {
         width: 200px;
         height: 20px;
         align-self: center;
+    }
+
+    .img {
+        grid-area: 2/2/3/3;
+        width: 200px;
+        justify-self: end;
+        align-self: self-start;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 400px 200px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .dgrid {
+        display: grid;
+        background-color: #FFFFFF;
+        border-radius: 10%;
+        align-content: center;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .i1 {
+        width: 100px;
+        height: 75px;
+        margin-left: 10px;
     }
 }
